@@ -1,9 +1,4 @@
-spring.cloud.config.name: my-application-name
-db:
-   mongo:
-      url: http://localhost:27017
----
-profiles: dev1,dev2
-db:
-   mongo:
-      url: http://dev-mongo-server:27017
+server.port=8888
+spring.cloud.config.server.git.uri=https://github.com/your-repo/config-repo
+spring.cloud.config.server.git.username=your-username
+spring.cloud.config.server.git.password=your-password
